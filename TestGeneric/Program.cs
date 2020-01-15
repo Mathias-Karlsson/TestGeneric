@@ -17,6 +17,11 @@ namespace TestGeneric
             int i = dsi.GetData();
 
             Console.WriteLine(String.Format("s={0}, i={1}", s, i));
+
+            String[] words = { "C++", "MacOS", "C#", "Android", "Python" };
+            String middle = DataSample<string>.getMiddleElement(words);
+
+            Console.WriteLine(middle);
             Console.ReadKey();
         }
     }
